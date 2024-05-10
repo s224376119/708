@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvAddNewTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Add New Task"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppTextInputLayout"
+                android:layout_below="@+id/edt_Email"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/tvName"
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="  title " />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppTextInputLayout"
+                android:layout_below="@+id/edt_Email"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/tvDate"
+                    style="@style/AppEditText"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="  Date " />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppTextInputLayout"
+                android:layout_below="@+id/edt_Email"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/tvDic"
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="start"
+                    android:hint="  detail "
+                    android:maxLines="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:background="@drawable/corner_raduis"
+                android:backgroundTint="@color/yellow"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
