@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Unit Converter App</string>
+
+    <string-array name="length_units_array">
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Km</item>
+        <item>Cm</item>
+    </string-array>
+
+
+    <string-array name="weight_units_array">
+        <item>Ton</item>
+        <item>Kg</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+        <item>Gram</item>
+    </string-array>
+
+    <!-- Temperature Units -->
+    <string-array name="temperature_units_array">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>

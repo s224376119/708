@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlack"
+    tools:context=".Activity_Converter">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_relative"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Quick Convert"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSelectUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Select Unit Converter: "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSelectUnit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/rbLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="10dp"
+                android:text="Length"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="10dp"
+                android:text="Weight"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="10dp"
+                android:text="Temperature"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etInputValue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/radioGroup"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittxt"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter Value"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:enabled="false"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etInputValue"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:text="Select Unit: "
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spSelectedUnits"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_edittxt"
+                    android:paddingStart="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvSelect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:text="Convert To: "
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+                <Spinner
+                    android:id="@+id/spConvertUnits"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_edittxt"
+                    android:paddingStart="20dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:enabled="false"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btnConvert"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_text_view">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Converted Value:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvOuputValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHeading"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
