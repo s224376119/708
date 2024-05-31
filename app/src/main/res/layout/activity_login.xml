@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/welome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppines_bold"
+        android:text="Welcome ,"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signup_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welome_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppines_bold"
+        android:text="Lets Chat!"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/etdUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/stroke"
+        android:fontFamily="@font/poppines_bold"
+        android:hint="username"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etdUsername"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/green"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppines_bold"
+        android:padding="10dp"
+        android:text="Go"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
