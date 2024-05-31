@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Simple Calculator"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/TextView"
+        android:text="Enter Value:"/>
+    <EditText
+        android:id="@+id/FValue"
+        style="@style/editText"
+        android:hint="Enter Value:"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/TextView"
+        android:text="Enter Value:"/>
+    <EditText
+        android:id="@+id/SValue"
+        style="@style/editText"
+        android:hint="Enter Value:"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button"
+        android:text="+"
+        android:id="@+id/addBtn"/>
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button"
+        android:text="-"
+        android:id="@+id/subtractBtn"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvValue"
+        android:background="@drawable/bg_edittxt"
+        android:textColor="@color/red"
+        android:padding="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
