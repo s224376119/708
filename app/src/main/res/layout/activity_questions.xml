@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.QuestionsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Welcome your Name!"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvQuestionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTotalQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/0"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <ProgressBar
+                android:id="@+id/pbQuestions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:max="15"
+                android:progress="0"
+                android:progressBackgroundTint="@color/black"
+                android:progressTint="@color/green"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Android question title:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:id="@+id/tvQuestionString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question String"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvAnsA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tv1_bg"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                android:hint="Answer"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvAnsB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tv1_bg"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:hint="Answer"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvAnsC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tv1_bg"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:hint="Answer"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="70dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_bg"
+                    android:paddingHorizontal="70dp"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:enabled="false"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_bg"
+                    android:paddingHorizontal="70dp"
+                    android:text="Next"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
